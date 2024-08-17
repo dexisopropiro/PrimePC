@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Informática - Muriaé</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003f6c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin: 0 auto;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b0c4de;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        .panel {
+            background: rgba(128, 128, 128, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .panel h2 {
+            color: #003f6c;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: background 0.3s, transform 0.3s;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .service:hover {
+            background: #e6f0ff;
+            transform: translateY(-5px);
+        }
+
+        .service i {
+            font-size: 30px;
+            margin-right: 20px;
+            color: #003f6c;
+        }
+
+        .service div {
+            flex: 1;
+        }
+
+        .service p {
+            margin: 0;
+        }
+
+        .price {
+            color: #003f6c;
+            font-weight: bold;
+        }
+
+        .about, .work {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2, .work h2 {
+            color: #003f6c;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .description p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #003f6c;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .service i {
+                margin-bottom: 10px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+
+        button{
+
+            border: 0;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+            color: rgb(14, 79, 141);
+border: #333 1px solid;
+        }
+.transition-1,
+button{
+  transition: all .3s ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#work">Trabalhos Realizados</a>
+        </nav>
+    </header>
+
+    <div class="container" id="services">
+        <div class="panel">
+            <h2>Serviços Oferecidos</h2>
+            <div class="service">
+                <i class="fa fa-laptop"></i>
+                <div>
+                    <p><strong>Formatação</strong></p>
+                    <p class="price">R$ 60,00</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa fa-tachometer-alt"></i>
+                <div>
+                    <p><strong>Otimização</strong></p>
+                    <p class="price">R$ 80,00</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa fa-cogs"></i>
+                <div>
+                    <p><strong>Montagem</strong></p>
+                    <p class="price">R$ 150,00</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa fa-broom"></i>
+                <div>
+                    <p><strong>Limpeza</strong></p>
+                    <p class="price">R$ 100,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<center>
+    <div class="contrato">
+<a href="https://wa.me/32 8860-1127">
+        <button>Falar com atendente</button>
+    </a>
+        </div>
+    </center>
+
+    <div class="container" id="about">
+        <div class="about">
+            <h2>Sobre Nós</h2>
+            <div class="description">
+                <p>Somos uma empresa localizada em Muriaé especializada em serviços de informática. Oferecemos formatação, otimização, montagem e limpeza de computadores com a melhor qualidade e preço justo. Nossa equipe é altamente qualificada e está pronta para atender suas necessidades de forma eficiente e profissional.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Serviços de Informática Muriaé. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
